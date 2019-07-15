@@ -2,10 +2,6 @@
 <h4>Relationship style</h4>
 
 <h5><strong>Default colors</strong></h5>
-<div>
-  <span>Background Color:</span>
-  <input type="color" ng-model="vis.params.canvasBackgroundColor" class="form-control"/>
-</div>
 
 <div>
   <span>Node:</span>
@@ -45,6 +41,37 @@
         <tr>
             <td>Min Edge Width&nbsp;</td>
             <td><input type="number" ng-model="vis.params.minEdgeSize" min="0.1"></td>
+        </tr>
+    </tbody>
+</table>
+
+<br>
+<h5><strong>Legend</strong></h5>
+<table>
+    <tbody>
+        <tr>
+            <td>X Position</td>
+            <td>x<input type="number" ng-model="vis.params.scalingXPosition" step="0.01"></td>
+        </tr>
+        <tr>
+            <td>Y Position</td>
+            <td>x<input type="number" ng-model="vis.params.scalingYPosition" step="0.01"></td>
+        </tr>
+        <tr>
+            <td>Width</td>
+            <td><input type="number" ng-model="vis.params.legendWidth" min="150">px</td>
+        </tr>
+        <tr>
+            <td>Padding</td>
+            <td><input type="number" ng-model="vis.params.legendPadding" step="0.1">px</td>
+        </tr>
+        <tr>
+            <td>Title Size</td>
+            <td><input type="number" ng-model="vis.params.legendTitleSize" min="1">pt</td>
+        </tr>
+        <tr>
+            <td>Content Size</td>
+            <td><input type="number" ng-model="vis.params.legendContentSize" min="1">pt</td>
         </tr>
     </tbody>
 </table>

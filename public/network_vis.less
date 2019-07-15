@@ -2,6 +2,17 @@
   width: 100%;
   height: 100%;
 }
+.network-legend-vis{
+  max-width: 150px;
+  height: 100%;
+  z-index:99;
+  position: absolute;
+  right: 0;
+}
+.network-legend-button{
+  position: absolute;
+  left: -20px;
+}
 
 div.vis-network-tooltip {
   position: absolute;
@@ -9,14 +20,13 @@ div.vis-network-tooltip {
   padding: 5px;
   white-space: nowrap;
 
-  font-family: verdana;
-  font-size:14px;
-  color:#000000;
-  background-color: #f5f4ed;
+  font-size:20px;
+  color:#ecf0f1;
+  background-color: rgba(34, 34, 34, 0.93);
 
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
-  border-radius: 3px;
+  border-radius: 10px;
   border: 1px solid #808074;
 
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);

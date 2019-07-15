@@ -1,38 +1,19 @@
-# Network Plugin for Kibana
+# Network Plugin for Kibana 5.5.X
 
-This is a plugin developed for Kibana that displays a network node that link two fields that have been previously selected.
+This is a plugin developed for Kibana 5 that displays a network node that link two fields that have been previously selected.
 
 ###### Link to the page: https://dlumbrer.github.io/kbn_network/
 
-## Installation Steps from release
+## Installation Steps
 
-Now this plugin is avalible for differents versions of Kibana (6, 5 and 4), in [releases](https://github.com/dlumbrer/kbn_network/releases "Go to releases!") you can download the plugin with all its dependencies installed:
-
-1. Go to [releases](https://github.com/dlumbrer/kbn_network/releases "Go to releases!") and download the right one for your Kibana
-2. unzip/untar it into `KIBANA_HOME/plugins`
-3. Start your Kibana
-
-
-## Installation Steps from GitHub source code
-
-1. Move into plugins folder:  `cd KIBANA_HOME/plugins`
-2. Clone the source code (**it depends on your Kibana's version**):
-    - Kibana 6.5: `git clone https://github.com/dlumbrer/kbn_network.git network_vis -b 6.5-dev`
-    - Kibana 6.3 or 6.4: `git clone https://github.com/dlumbrer/kbn_network.git network_vis -b 6.4-dev`
-    - Kibana 6.0, 6.1 or 6.2: `git clone https://github.com/dlumbrer/kbn_network.git network_vis -b 6.2-dev`
-    - Kibana 5.5.X or 5.6.X: `git clone https://github.com/dlumbrer/kbn_network.git network_vis -b 5.5.x`
-    - Kibana 5.5.X or lower: `git clone https://github.com/dlumbrer/kbn_network.git network_vis -b 5.4.x`
-    - Kibana 4: `git clone https://github.com/dlumbrer/kbn_network.git network_vis -b 4.x`
-
-3. Install dependencies:
-      ```
-      cd network_vis
-      rm -rf images/
-      npm install
-      ```
-4. Start Kibana
-
-> **Important:** If you have any problem with the plugin version (like a warning message "**it expected Kibana version "x.x.x", and found "x.x.x"**") only change the value of the "version" tag on the package.json to your Kibana version
+```
+cd KIBANA_HOME/plugins
+git clone https://github.com/dlumbrer/kbn_network.git network_vis
+cd network_vis
+rm -rf images/
+npm install
+```
+> **Important:** If you have any problem with the plugin version (like a warning message "**it expected Kibana version "5.5.0", and found "5.5.x"**") only change the value of the "version" tag on the package.json to your Kibana version
 
 
 #### Uninstall:
@@ -40,7 +21,6 @@ Now this plugin is avalible for differents versions of Kibana (6, 5 and 4), in [
 cd KIBANA_HOME
 rm -rf plugins/network_vis/
 ```
-
 
 ## Types of networks
 
@@ -68,12 +48,7 @@ You can find an user guide in the file [USER_GUIDE.md](https://github.com/dlumbr
 
 ## Help me to improve! :smile:
 
-You can contact or helping me if you have any issue by:
+If there's any problem or doubt, please, open a Github Issue (Pull Request) or contact me via email (dmorenolumb@gmail.com). It would be very helpful if you tried it and tell me what you think of it, the errors and the possible improves that I could make.
 
-- Opening an issue in the repository
-- Opening a PR
-- Sending an email to [me](mailto:dmorenolumb@gmail.com)!
 
-This is an open source project that I maintain in my free time, as a hobby and my love for open source and data visualization. It is free as you know, but you can help me with a cup of coffee:
-
-[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=HHPTP787VZVZL)
+#### For anything, contact me: dmorenolumb@gmail.com
